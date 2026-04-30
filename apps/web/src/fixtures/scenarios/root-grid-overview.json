@@ -1,0 +1,131 @@
+{
+  "id": "root-grid-overview",
+  "label": "Root Grid Overview",
+  "shell": {
+    "productName": "YDTB",
+    "workspaceName": "Acme Corp",
+    "workspaceShortName": "AC",
+    "workspacePlan": "Free Plan",
+    "globalSearchPlaceholder": "Search resources…",
+    "topRailItems": [
+      { "id": "dashboard", "label": "Dashboard", "icon": "LayoutDashboard" },
+      { "id": "contacts", "label": "Contacts", "icon": "Users" },
+      { "id": "storage", "label": "Storage", "icon": "HardDrive", "active": true },
+      { "id": "team", "label": "Team", "icon": "Shield" },
+      { "id": "settings", "label": "Settings", "icon": "Settings2" }
+    ],
+    "bottomRailItems": [
+      { "id": "support", "label": "Support", "icon": "CircleHelp", "position": "bottom" },
+      { "id": "billing", "label": "Billing", "icon": "CreditCard", "position": "bottom" }
+    ]
+  },
+  "currentScope": {
+    "id": "ubZZYJj",
+    "type": "location",
+    "name": "Acme Corp",
+    "slug": "acme-corp",
+    "billingOwnerLabel": "Acme Corp location plan"
+  },
+  "sidebar": {
+    "title": "Storage",
+    "rootLabel": "All Files",
+    "favorites": [
+      { "id": "fav-marketing", "label": "Marketing Assets", "path": "/marketing-assets", "icon": "Star" },
+      { "id": "fav-product", "label": "Product Images", "path": "/product-images", "icon": "Star" }
+    ],
+    "shared": [
+      { "id": "shared-brand", "label": "Brand Kit", "path": "/shared/brand-kit", "icon": "Users" }
+    ],
+    "recent": [
+      { "id": "recent-campaign", "label": "Campaign Q4", "path": "/marketing-assets/campaign-q4", "icon": "Clock3" }
+    ],
+    "tree": [
+      {
+        "id": "folder-all-files",
+        "name": "All Files",
+        "kind": "folder",
+        "path": "/",
+        "expanded": true,
+        "selected": true,
+        "children": [
+          { "id": "folder-marketing-assets", "name": "Marketing Assets", "kind": "folder", "path": "/marketing-assets", "itemCount": 12 },
+          { "id": "folder-product-images", "name": "Product Images", "kind": "folder", "path": "/product-images", "itemCount": 84 },
+          { "id": "folder-documents", "name": "Documents", "kind": "folder", "path": "/documents", "itemCount": 18 }
+        ]
+      }
+    ],
+    "uploadActionLabel": "Upload File",
+    "selectActionLabel": "Select File…",
+    "usage": {
+      "usedLabel": "7.5 GB",
+      "totalLabel": "10 GB",
+      "percentUsed": 75,
+      "ctaLabel": "Upgrade Plan",
+      "billingContextLabel": "Quota applies to this location",
+      "warningState": "normal"
+    }
+  },
+  "header": {
+    "canGoBack": false,
+    "canGoForward": false,
+    "breadcrumbs": [
+      { "id": "crumb-home", "label": "All Files", "path": "/", "kind": "home" }
+    ],
+    "searchPlaceholder": "Search files…",
+    "searchQuery": "",
+    "searchScopes": [
+      { "id": "current-folder", "label": "Current folder", "active": true },
+      { "id": "whole-library", "label": "Whole library", "active": false }
+    ],
+    "filters": [],
+    "sortLabel": "Modified",
+    "views": [
+      { "id": "grid", "label": "Grid", "active": true },
+      { "id": "list", "label": "List", "active": false },
+      { "id": "columns", "label": "Columns", "active": false }
+    ],
+    "actions": [
+      { "id": "upload", "label": "Upload", "kind": "secondary", "icon": "Upload" }
+    ],
+    "bulkActions": []
+  },
+  "content": {
+    "viewMode": "grid",
+    "emptyState": false,
+    "dragState": "idle",
+    "columns": [],
+    "items": [
+      { "id": "folder-marketing-assets", "kind": "folder", "name": "Marketing Assets", "path": "/marketing-assets", "icon": "Folder", "childCountLabel": "12 items", "modifiedLabel": "2026-04-24" },
+      { "id": "folder-product-images", "kind": "folder", "name": "Product Images", "path": "/product-images", "icon": "Folder", "childCountLabel": "84 items", "modifiedLabel": "2026-04-27" },
+      { "id": "folder-documents", "kind": "folder", "name": "Documents", "path": "/documents", "icon": "Folder", "childCountLabel": "18 items", "modifiedLabel": "2026-04-20" }
+    ]
+  },
+  "selection": {
+    "mode": "single",
+    "selectedIds": ["folder-product-images"],
+    "primaryId": "folder-product-images"
+  },
+  "inspector": {
+    "state": "folder",
+    "title": "Product Images",
+    "subtitle": "Folder",
+    "previewIcon": "Folder",
+    "metadata": [
+      { "label": "Items", "value": "84" },
+      { "label": "Modified", "value": "2026-04-27" },
+      { "label": "Path", "value": "/product-images" }
+    ],
+    "tabs": [
+      { "id": "details", "label": "Details", "active": true },
+      { "id": "permissions", "label": "Permissions", "active": false },
+      { "id": "sharing", "label": "Sharing", "active": false },
+      { "id": "activity", "label": "Activity", "active": false }
+    ],
+    "actions": [
+      { "id": "open", "label": "Open", "kind": "secondary" },
+      { "id": "download", "label": "Download", "kind": "primary" }
+    ]
+  },
+  "contextMenu": null,
+  "uploadModal": null
+}

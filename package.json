@@ -1,0 +1,11 @@
+{
+  "name": "@ydtb/storage-ui-static",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "dev": "pnpm --filter @ydtb/storage-static-web dev",
+    "build": "pnpm --filter @ydtb/storage-static-web build",
+    "preview": "pnpm --filter @ydtb/storage-static-web preview"
+  }
+}

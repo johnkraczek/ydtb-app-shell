@@ -1,0 +1,155 @@
+{
+  "id": "upload-modal",
+  "label": "Upload Destination Modal",
+  "shell": {
+    "productName": "YDTB",
+    "workspaceName": "Acme Corp",
+    "workspaceShortName": "AC",
+    "workspacePlan": "Free Plan",
+    "globalSearchPlaceholder": "Search resources…",
+    "topRailItems": [
+      { "id": "dashboard", "label": "Dashboard", "icon": "LayoutDashboard" },
+      { "id": "contacts", "label": "Contacts", "icon": "Users" },
+      { "id": "storage", "label": "Storage", "icon": "HardDrive", "active": true },
+      { "id": "team", "label": "Team", "icon": "Shield" },
+      { "id": "settings", "label": "Settings", "icon": "Settings2" }
+    ],
+    "bottomRailItems": [
+      { "id": "support", "label": "Support", "icon": "CircleHelp", "position": "bottom" },
+      { "id": "billing", "label": "Billing", "icon": "CreditCard", "position": "bottom" }
+    ]
+  },
+  "currentScope": {
+    "id": "ubZZYJj",
+    "type": "location",
+    "name": "Acme Corp",
+    "slug": "acme-corp",
+    "billingOwnerLabel": "Acme Corp location plan"
+  },
+  "sidebar": {
+    "title": "Storage",
+    "rootLabel": "All Files",
+    "favorites": [
+      { "id": "fav-marketing", "label": "Marketing Assets", "path": "/marketing-assets", "icon": "Star" },
+      { "id": "fav-campaign", "label": "Campaign Q4", "path": "/marketing-assets/campaign-q4", "icon": "Star" }
+    ],
+    "shared": [],
+    "recent": [],
+    "tree": [
+      {
+        "id": "folder-all-files",
+        "name": "All Files",
+        "kind": "folder",
+        "path": "/",
+        "expanded": true,
+        "children": [
+          {
+            "id": "folder-marketing-assets",
+            "name": "Marketing Assets",
+            "kind": "folder",
+            "path": "/marketing-assets",
+            "expanded": true,
+            "selected": true,
+            "children": [
+              { "id": "folder-campaign-q4", "name": "Campaign Q4", "kind": "folder", "path": "/marketing-assets/campaign-q4", "expanded": true },
+              { "id": "folder-social-media", "name": "Social Media", "kind": "folder", "path": "/marketing-assets/social-media" }
+            ]
+          },
+          { "id": "folder-product-images", "name": "Product Images", "kind": "folder", "path": "/product-images" },
+          { "id": "folder-documents", "name": "Documents", "kind": "folder", "path": "/documents" }
+        ]
+      }
+    ],
+    "uploadActionLabel": "Upload File",
+    "selectActionLabel": "Select File…",
+    "usage": {
+      "usedLabel": "8.2 GB",
+      "totalLabel": "10 GB",
+      "percentUsed": 82,
+      "ctaLabel": "Upgrade Plan",
+      "billingContextLabel": "Quota applies to this location",
+      "warningState": "warning"
+    }
+  },
+  "header": {
+    "canGoBack": true,
+    "canGoForward": false,
+    "breadcrumbs": [
+      { "id": "crumb-home", "label": "All Files", "path": "/", "kind": "home" },
+      { "id": "crumb-marketing", "label": "Marketing Assets", "path": "/marketing-assets", "kind": "folder" }
+    ],
+    "searchPlaceholder": "Search files…",
+    "searchQuery": "",
+    "searchScopes": [
+      { "id": "current-folder", "label": "Current folder", "active": true },
+      { "id": "whole-library", "label": "Whole library", "active": false }
+    ],
+    "filters": [],
+    "sortLabel": "Modified",
+    "views": [
+      { "id": "grid", "label": "Grid", "active": true },
+      { "id": "list", "label": "List", "active": false },
+      { "id": "columns", "label": "Columns", "active": false }
+    ],
+    "actions": [
+      { "id": "upload", "label": "Upload", "kind": "secondary", "icon": "Upload" }
+    ],
+    "bulkActions": []
+  },
+  "content": {
+    "viewMode": "grid",
+    "emptyState": false,
+    "dragState": "upload-overlay",
+    "columns": [],
+    "items": []
+  },
+  "selection": {
+    "mode": "none",
+    "selectedIds": [],
+    "primaryId": null
+  },
+  "inspector": {
+    "state": "empty",
+    "title": "Select an item to view details",
+    "metadata": [],
+    "tabs": [],
+    "actions": []
+  },
+  "contextMenu": null,
+  "uploadModal": {
+    "open": true,
+    "title": "Select a file destination",
+    "destinationLabel": "Upload to Marketing Assets",
+    "destinationTree": [
+      {
+        "id": "folder-marketing-assets",
+        "name": "Marketing Assets",
+        "kind": "folder",
+        "path": "/marketing-assets",
+        "expanded": true,
+        "selected": true,
+        "children": [
+          {
+            "id": "folder-campaign-q4",
+            "name": "Campaign Q4",
+            "kind": "folder",
+            "path": "/marketing-assets/campaign-q4",
+            "expanded": true,
+            "children": [
+              { "id": "file-ad-copy", "name": "Ad_Copy.docx", "kind": "file", "path": "/marketing-assets/campaign-q4/ad-copy.docx" },
+              { "id": "file-budget", "name": "Budget.xlsx", "kind": "file", "path": "/marketing-assets/campaign-q4/budget.xlsx" },
+              { "id": "file-email-header", "name": "Email_Header.png", "kind": "file", "path": "/marketing-assets/campaign-q4/email-header.png" }
+            ]
+          },
+          { "id": "folder-social-media", "name": "Social Media", "kind": "folder", "path": "/marketing-assets/social-media" }
+        ]
+      },
+      { "id": "folder-product-images", "name": "Product Images", "kind": "folder", "path": "/product-images" },
+      { "id": "folder-documents", "name": "Documents", "kind": "folder", "path": "/documents" }
+    ],
+    "dropzoneTitle": "Upload to selected destination",
+    "dropzoneBody": "Drag and drop or click to upload",
+    "primaryActionLabel": "Select",
+    "secondaryActionLabel": "Cancel"
+  }
+}
