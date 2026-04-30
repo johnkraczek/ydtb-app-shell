@@ -13,6 +13,13 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@ydtb/core-client": ["packages/core-client/src/index.ts"],
+      "@ydtb/tk-scope": ["packages/tk-scope/src/index.ts"],
+      "@ydtb/tk-scope/client": ["packages/tk-scope/src/client.tsx"],
+      "@ydtb/tk-scope-ui": ["packages/ui/src/index.ts"],
+      "@ydtb/tk-scope-ui/*": ["packages/ui/src/*"]
+    }
   }
 }

@@ -1,58 +1,47 @@
-# Storage UI Static Package
+# YDTB App Shell — Storage Design Sandbox
 
-Self-contained static design package for the YDTB Storage tool.
+This repo exists to give Replit a **real YDTB shell environment** to design inside.
 
-## Purpose
+## What this repo is
 
-This project exists so Replit can design the Storage UI **inside YDTB's real shell/tie points** without needing the real backend.
+- a static sandbox
+- a copy of the existing shell structure
+- a copy of the real `@ydtb/tk-scope-ui` package source
+- a place to build inside the same tie points the real app uses
 
-Everything in here is intentionally static:
-- no backend calls
-- no auth dependency
-- no real uploads
-- no live search indexing
-- no persistence requirements
+## What this repo is not
 
-## Fixed regions
+- not the real app
+- not connected to the backend
+- not the place for us to pre-build the Storage UI
+- not permissioned to redesign shell architecture
 
-Replit should work inside these fixed regions only:
-- dashboard chrome
-- icon rail
-- sidebar portal region
-- header portal region
+## Fixed shell regions
+
+Replit should work only inside these areas:
+- sidebar portal
+- header portal
 - main content area
-- cmd-k / search-provider surface
+- cmd-k / search-provider related surface
 
-## Workspace layout
+The outer shell/chrome should be treated as fixed.
 
-```text
-replit/storage/
-  apps/web/                 # static demo app
-  packages/contracts/       # shared static UI/data contracts
-  packages/ui/              # local UI primitives / future @ydtb/ui comparison point
-  docs/mockups/             # source reference screenshots
-```
+## Important constraint
 
-## Scripts
+There should be **no authored Storage UI** in the build regions before handoff.
+Those regions should remain blank / neutral so Replit is designing into the shell rather than replacing our own attempt.
 
-From this folder:
+## Packages in this repo
+
+- `packages/ui` — copied from the real `tk-scope/packages/ui`
+- `packages/core-client` — minimal portal system matching the real shell portal mechanism
+- `packages/tk-scope` — minimal client portal exports (`HeaderPortal`, `SidebarPortal`) matching the real toolkit API shape
+- `apps/web` — static shell host app
+
+## Run locally
 
 ```bash
 pnpm install
 pnpm dev
 pnpm build
 ```
-
-## Current scaffold scope
-
-This scaffold includes:
-- a minimal static dashboard shell
-- a storage page renderer driven by JSON scenarios
-- starter scenario fixtures based on the uploaded mockups
-- local contracts package for expected UI data shapes
-- local `@ydtb/ui` package stub for future comparison/copy-forward work
-
-## Important note
-
-This package is a **design sandbox**, not the real app.
-It should preserve the shape of the UI contract and shell boundaries, while allowing fast visual iteration.

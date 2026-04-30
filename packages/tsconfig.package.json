@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "${configDir}",
+    "outDir": "${configDir}/dist"
+  },
+  "include": ["${configDir}/src/**/*", "${configDir}/testing/**/*", "${configDir}/tests/**/*"],
+  "exclude": [
+    "${configDir}/**/__tests__/**",
+    "${configDir}/**/*.test.ts",
+    "${configDir}/**/*.test.tsx",
+    "${configDir}/**/*.spec.ts",
+    "${configDir}/**/*.spec.tsx",
+    "${configDir}/**/e2e/**",
+    "${configDir}/dist/**",
+    "${configDir}/node_modules/**"
+  ]
+}

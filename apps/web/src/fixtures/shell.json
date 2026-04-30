@@ -1,0 +1,28 @@
+{
+  "productName": "AgencyOS",
+  "workspace": {
+    "name": "Acme Corp",
+    "shortName": "AC",
+    "plan": "Free Plan"
+  },
+  "rail": {
+    "top": [
+      { "id": "overview", "label": "Overview", "icon": "Rocket" },
+      { "id": "dashboard", "label": "Dashboard", "icon": "House" },
+      { "id": "team", "label": "Team", "icon": "Users" },
+      { "id": "files", "label": "Storage", "icon": "HardDrive", "active": true },
+      { "id": "automations", "label": "Automations", "icon": "Zap" }
+    ],
+    "bottom": [
+      { "id": "search", "label": "Search", "icon": "Search" },
+      { "id": "settings", "label": "Settings", "icon": "Settings2" }
+    ]
+  },
+  "scope": {
+    "id": "ubZZYJj",
+    "type": "location",
+    "name": "Acme Corp"
+  },
+  "globalSearchPlaceholder": "Search resources…",
+  "toolTitle": "Storage"
+}

@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: #f4f4f5;
+  --color-foreground: #09090b;
+  --color-card: #ffffff;
+  --color-card-foreground: #09090b;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #09090b;
+  --color-primary: #6366f1;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #18181b;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+  --color-success: #22c55e;
+  --color-success-foreground: #15803d;
+  --color-warning: #f59e0b;
+  --color-warning-foreground: #b45309;
+  --color-info: #3b82f6;
+  --color-info-foreground: #2563eb;
+  --color-border: #e4e4e7;
+  --color-input: #e4e4e7;
+  --color-ring: #6366f1;
+  --color-sidebar: #ffffff;
+  --color-sidebar-foreground: #09090b;
+  --color-sidebar-border: #e4e4e7;
+  --color-sidebar-accent: #f4f4f5;
+  --color-sidebar-accent-foreground: #18181b;
+  --radius: 0.5rem;
+}
+
+/* ========================================
+   DARK MODE
+   ======================================== */
+.dark {
+  --color-background: #09090b;
+  --color-foreground: #fafafa;
+  --color-card: #18181b;
+  --color-card-foreground: #fafafa;
+  --color-popover: #18181b;
+  --color-popover-foreground: #fafafa;
+  --color-secondary: #27272a;
+  --color-secondary-foreground: #fafafa;
+  --color-muted: #27272a;
+  --color-muted-foreground: #a1a1aa;
+  --color-accent: #27272a;
+  --color-accent-foreground: #fafafa;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #fafafa;
+  --color-success: #4ade80;
+  --color-success-foreground: #4ade80;
+  --color-warning: #fbbf24;
+  --color-warning-foreground: #fbbf24;
+  --color-info: #60a5fa;
+  --color-info-foreground: #60a5fa;
+  --color-border: #27272a;
+  --color-input: #27272a;
+  --color-ring: #6366f1;
+  --color-sidebar: #18181b;
+  --color-sidebar-foreground: #fafafa;
+  --color-sidebar-border: #27272a;
+  --color-sidebar-accent: #27272a;
+  --color-sidebar-accent-foreground: #fafafa;
+}
+
+/* ========================================
+   ACCENT COLORS
+   ======================================== */
+.accent-zinc {
+  --color-primary: #71717a;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #71717a;
+}
+.accent-slate {
+  --color-primary: #6366f1;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #6366f1;
+}
+.accent-stone {
+  --color-primary: #a8a29e;
+  --color-primary-foreground: #1c1917;
+  --color-ring: #a8a29e;
+}
+.accent-gray {
+  --color-primary: #9ca3af;
+  --color-primary-foreground: #111827;
+  --color-ring: #9ca3af;
+}
+.accent-neutral {
+  --color-primary: #a3a3a3;
+  --color-primary-foreground: #171717;
+  --color-ring: #a3a3a3;
+}
+.accent-red {
+  --color-primary: #ef4444;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #ef4444;
+}
+.accent-rose {
+  --color-primary: #f43f5e;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #f43f5e;
+}
+.accent-orange {
+  --color-primary: #f97316;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #f97316;
+}
+.accent-green {
+  --color-primary: #22c55e;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #22c55e;
+}
+.accent-blue {
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #3b82f6;
+}
+.accent-yellow {
+  --color-primary: #eab308;
+  --color-primary-foreground: #422006;
+  --color-ring: #eab308;
+}
+.accent-violet {
+  --color-primary: #8b5cf6;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #8b5cf6;
+}
+
+/* ========================================
+   BACKGROUND PATTERNS
+   ======================================== */
+.pattern-none {
+  /* no pattern */
+}
+
+.pattern-dots {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, transparent 60%, var(--color-muted-foreground)) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 24px 24px;
+}
+
+.pattern-grid {
+  background-image:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.pattern-graph {
+  background-image:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--color-border) 50%, transparent) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-border) 50%, transparent) 1px,
+      transparent 1px
+    );
+  background-size:
+    96px 96px,
+    96px 96px,
+    24px 24px,
+    24px 24px;
+}
+
+.agency-mode {
+  --color-background: #f0f2f7;
+}
+
+.dark .agency-mode {
+  --color-background: #0c0c14;
+}
+
+/* ========================================
+   REACT-GRID-LAYOUT
+   ======================================== */
+.react-resizable-hide > span[class*="cursor-se-resize"] {
+  display: none;
+}
+
+.react-grid-placeholder {
+  background-color: var(--color-primary);
+  opacity: 0.1;
+  border-radius: 0.5rem;
+  border: 2px dashed var(--color-primary);
+}
+
+.react-grid-item.react-draggable-dragging {
+  opacity: 0.8;
+  box-shadow:
+    0 10px 25px -5px rgb(0 0 0 / 0.15),
+    0 4px 10px -6px rgb(0 0 0 / 0.1);
+  z-index: 100;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+* {
+  box-sizing: border-box;
+  border-color: var(--color-border);
+}
+
+html,
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Prevent iOS Safari auto-zoom on input focus (triggers when font-size < 16px) */
+@supports (-webkit-touch-callout: none) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
